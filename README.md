@@ -241,12 +241,7 @@ Technical team responsible for platform maintenance, performance, and security.
 | Notifications  | Firebase Cloud Messaging (FCM)    |
 | Hosting        | AWS / On-premise college servers  |
 
- Getting Started:
-  1. git clone https://github.com/your-org/remote-classroom-rural.git
-  2. cd remote-classroom-rural
-  3.npm install
-  4.cp .env.example .env
-  5.npm run dev
+
 
 
 
