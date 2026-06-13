@@ -1,1 +1,53 @@
++----------------------+
+|       Student        |
++----------------------+
+| studentId            |
+| name                 |
+| department           |
+| email                |
++----------------------+
+| enrollCourse()       |
+| viewProgress()       |
++----------------------+
 
+            |
+            | enrolls
+            v
+
++----------------------+
+|        Course        |
++----------------------+
+| courseId             |
+| courseName           |
+| category             |
+| duration             |
+| price                |
++----------------------+
+| getDetails()         |
++----------------------+
+
+            |
+            | hosted on
+            v
+
++----------------------+
+|       Platform       |
++----------------------+
+| platformId           |
+| platformName         |
++----------------------+
+| provideCourse()      |
++----------------------+
+
+            ^
+            |
+            |
++----------------------+
+|   CourseProgress     |
++----------------------+
+| progressId           |
+| completionRate       |
+| rating               |
++----------------------+
+| updateProgress()     |
++----------------------+
