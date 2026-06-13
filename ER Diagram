@@ -1,1 +1,45 @@
++----------------+
+|    COURSE      |
++----------------+
+| Course_ID (PK) |
+| Course_Name    |
+| Category       |
+| Duration       |
+| Price          |
++----------------+
+        |
+        | Belongs To
+        |
+        v
++----------------+
+|   PLATFORM     |
++----------------+
+| Platform_ID(PK)|
+| Platform_Name  |
++----------------+
 
+        ^
+        |
+        | Enrolls
+        |
++----------------+
+|    STUDENT     |
++----------------+
+| Student_ID(PK) |
+| Student_Name   |
+| Department     |
+| Email          |
++----------------+
+        |
+        | Generates
+        |
+        v
++----------------------+
+| COURSE_PROGRESS      |
++----------------------+
+| Progress_ID (PK)     |
+| Student_ID (FK)      |
+| Course_ID (FK)       |
+| Completion_Rate      |
+| Rating               |
++----------------------+
