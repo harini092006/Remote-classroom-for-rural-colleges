@@ -242,23 +242,24 @@ Technical team responsible for platform maintenance, performance, and security.
 | Hosting        | AWS / On-premise college servers  |
 
  Project Structure:
-remote-classroom/
-├── client/          
-|   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   └── services/
-├── server/                
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   └── middleware/
-├── admin-panel/             
-├── docs/                    
+ 
+remote-classroom
+├── client        
+|   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   └── services
+├── server              
+│   ├── controllers
+│   ├── models
+│   ├── routes
+│   └── middleware
+├── admin-panel            
+├── docs                   
 │   ├── SRS.md
-│   ├── design/
-│   └── api-spec/
-├── scripts/                
+│   ├── design
+│   └── api-spec
+├── scripts               
 ├── .env.example
 ├── docker-compose.yml
 └── README.md
