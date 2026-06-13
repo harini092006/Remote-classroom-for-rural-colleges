@@ -241,35 +241,12 @@ Technical team responsible for platform maintenance, performance, and security.
 | Notifications  | Firebase Cloud Messaging (FCM)    |
 | Hosting        | AWS / On-premise college servers  |
 
- Project Structure:
- 
-remote-classroom
-├── client        
-|   ├── src
-│   │   ├── components
-│   │   ├── pages
-│   │   └── services
-├── server              
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   └── middleware
-├── admin-panel            
-├── docs                   
-│   ├── SRS.md
-│   ├── design
-│   └── api-spec
-├── scripts               
-├── .env.example
-├── docker-compose.yml
-└── README.md
-
  Getting Started:
- 1. git clone https://github.com/your-org/remote-classroom-rural.git
- 2. cd remote-classroom-rural
- 3.npm install
- 4.cp .env.example .env
- 5.npm run dev
+  1. git clone https://github.com/your-org/remote-classroom-rural.git
+  2. cd remote-classroom-rural
+  3.npm install
+  4.cp .env.example .env
+  5.npm run dev
 
 
 
