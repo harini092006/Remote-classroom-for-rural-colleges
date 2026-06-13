@@ -244,7 +244,7 @@ Technical team responsible for platform maintenance, performance, and security.
  Project Structure:
 remote-classroom/
 ├── client/          
-│   ├── src/
+|   ├── src/
 │   │   ├── components/
 │   │   ├── pages/
 │   │   └── services/
