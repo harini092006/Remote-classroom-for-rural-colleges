@@ -1,1 +1,28 @@
+const StudentDashboard = () => {
+  const stats = [
+    { label: "Enrolled Classes", value: 5 },
+    { label: "Upcoming Sessions", value: 2 },
+    { label: "Assignments Pending", value: 3 },
+    { label: "Attendance %", value: "87%" },
+  ];
 
+  return (
+    <div className="dashboard">
+      <h2>Welcome, Student 👋</h2>
+      <div className="stats-grid">
+        {stats.map((s, i) => (
+          <div className="stat-card" key={i}>
+            <h3>{s.value}</h3>
+            <p>{s.label}</p>
+          </div>
+        ))}
+      </div>
+      <div className="upcoming-classes">
+        <h3>Today's Live Sessions</h3>
+        {/* Session list here */}
+      </div>
+    </div>
+  );
+};
+
+export default StudentDashboard;
