@@ -1,1 +1,35 @@
+import { useState } from "react";
 
+const CreateClassForm = () => {
+  const [classData, setClassData] = useState({
+    className: "", subject: "", description: "",
+    college: "", schedule: ""
+  });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await fetch("http://localhost:8080/api/classes", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(classData),
+    });
+    if (res.ok) alert("Class Created Successfully!");
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <h2>Create New Class</h2>
+      <input placeholder="Class Name" onChange={e =>
+        setClassData({...classData, className: e.target.value})} />
+      <input placeholder="Subject" onChange={e =>
+        setClassData({...classData, subject: e.target.value})} />
+      <textarea placeholder="Description" onChange={e =>
+        setClassData({...classData, description: e.target.value})} />
+      <input placeholder="Target College" onChange={e =>
+        setClassData({...classData, college: e.target.value})} />
+      <button type="submit">Create Class</button>
+    </form>
+  );
+};
+
+export default CreateClassForm;
